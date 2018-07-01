@@ -70,19 +70,19 @@
     <img id="github" src="./GitHub-Mark-Light-32px.png" alt="View on GitHub">
   </a>
   <script>
-    const canvas = document.querySelector('canvas')
-    const ctx = canvas.getContext('2d');
-    const btn = document.querySelector('#btn');
-    const audio = new Audio('./error.mp3');
-    const errorImg = new Image();
+    var canvas = document.querySelector('canvas')
+    var ctx = canvas.getContext('2d');
+    var btn = document.querySelector('#btn');
+    var audio = new Audio('./error.mp3');
+    var errorImg = new Image();
     errorImg.src = './error.png';
 
-    window.onload = () => {
+    window.onload = function() {
       canvas.width = innerWidth;
       canvas.height = innerHeight;
     }
 
-    const bing = () => {
+    function bing() {
       audio.play()
     };
     document.addEventListener('click', bing);
