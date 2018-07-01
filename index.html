@@ -86,7 +86,7 @@
       audio.play()
     };
     document.addEventListener('click', bing);
-    document.addEventListener("mousemove", e => {
+    document.addEventListener("mousemove", function(e) {
       ctx.drawImage(errorImg, e.clientX, e.clientY)
     });
   </script>
