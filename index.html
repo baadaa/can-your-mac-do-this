@@ -89,14 +89,13 @@
 
     window.onload = resetCanvas();
 
-    window.addEventListener("resize", resetCanvas);
 
     function bing() {
       audio.play();
     };
     function resetCanvas() {
-      canvas.width = innerWidth;
-      canvas.height = innerHeight;
+      canvas.width = 6000;
+      canvas.height = 6000;
     }
 
     function drawError(x, y) {
@@ -119,6 +118,7 @@
     document.addEventListener('click', bing);
     document.addEventListener("mousemove", function(e) {
       drawError(e.clientX, e.clientY);
+      // console.log(e);
     });
 
   </script>
